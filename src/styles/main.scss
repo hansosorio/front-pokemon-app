@@ -1,0 +1,78 @@
+/* Color variables */
+$primary-color: #2196f3;
+
+$background-color-darkgray: #333;
+
+$white: #fff;
+$black: #000;
+$border-color: #757575;
+$shadow-color: #757575;
+
+
+/* Global styles */
+html, body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.btn.btn-primary {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px $shadow-color;
+    color: $white;
+    background-color: $primary-color;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 576px) {
+    .login {
+        width: 70%;
+    }
+    .home {
+        .header {
+            font-size: 2.5vw;
+        }
+        .navigation {
+            justify-content: space-around;
+            font-size: 3.5vw;
+            &-search {
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                .form-control {
+                    width: 15rem;
+                    height: 4vh;
+                    font-size: 4vw;
+                    padding-left: 2vw;
+                }
+            }
+            &-logout {
+                text-align: right;
+                font-size: 3vw;
+            }
+        }
+        .list {
+            &-wrapper {
+                max-height: 55vh;
+                &-card {
+                    width: 50vw;
+                    &-link{
+                        .name {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            bottom: 5vh;
+        }
+    }
+}
