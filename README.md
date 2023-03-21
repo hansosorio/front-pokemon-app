@@ -1,24 +1,44 @@
-# front-pokemon-app
+# Front-pokemon-app Vue.js Project
 
-## Project setup
+This is a project built with Vue.js. Here you find all the pokemons in the world.
+
+Here are the steps to run the project:
+
+
+## Getting Started
+
+1. Clone the repository:
 ```
+git clone https://github.com/hansosorio/front-pokemon-app.git
+```
+
+2. Install dependencies and Project setup:
+```
+cd front-pokemon-app
 npm install
 ```
 
-### Compiles and hot-reloads for development
+3. Run the development server, by Compiling and see hot-reloads for development:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+4. Open your browser and go to `http://localhost:8080` to see the app running.
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Production URL
+
+The app is currently deployed to the following URL: `https://front-pokemon-app.vercel.app/`
+
+
+## Demo
+
+Here's a quick demo of the app:
+
+[![Demo Video](https://raw.githubusercontent.com/hansosorio/front-pokemon-app/develop/docs/front-pokemon-app-home-page.png)](https://hansosorio.github.io/front-pokemon-app/embed.html)
+
+To watch the demo video, click on the image above or [click here](https://drive.google.com/file/d/1q73TM2mjIU8iWpk89I2AKLhkR7OyByUK/view).
+
+---
+
+That's it! With these steps, you should be able to clone the project, install dependencies, run the development server, and access the app at `http://localhost:8080`. Additionally, the README file includes the production URL where the app is currently deployed, as well as a demo video or GIF that showcases the app's functionality.
