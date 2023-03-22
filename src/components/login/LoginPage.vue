@@ -43,10 +43,11 @@ export default {
   computed: {
     isEmailValid() {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return this.email.length >= 3 && emailRegex.test(this.email);
+      return this.email?.length >= 3 && emailRegex.test(this.email);
     },
     isPasswordValid() {
-      return this.password.length >= 8;
+      console.log();
+      return this.password?.length >= 3;
     },
     isFormValid() {
       return this.isEmailValid && this.isPasswordValid;

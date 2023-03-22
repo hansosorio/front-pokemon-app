@@ -32,11 +32,9 @@ function formatPokemonDetail(pokemon) {
     };
 }
 export async function fetchPokemons({currentPage, itemsPerPage}) {
-
     const  url = `${pokemonsDataURL}?limit=${itemsPerPage}&offset=${
         currentPage * itemsPerPage
     }`;
-
     const response = await axios.get(url)
     if (response?.status === 200) {
         const results = formatPokemonsList(response?.data?.results);
@@ -47,7 +45,6 @@ export async function fetchPokemons({currentPage, itemsPerPage}) {
 
 export async function fetchPokemonDetail(name) {
     const url = `${pokemonsDataURL}/${name.toLowerCase()}`;
-
     const response = await axios.get(url)
     if (response?.status === 200) {
         const result = formatPokemonDetail(response?.data);

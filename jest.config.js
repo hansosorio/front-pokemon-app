@@ -15,7 +15,6 @@ module.exports = {
     '^(.+)/dist/mds\\.svg\\?([a-z-]+)': 'jest-transform-stub',
   },
   snapshotSerializers: ['jest-serializer-vue'],
-  // testMatch: ['<rootDir>/__test__/components/**/**/*.spec.(js|jsx|ts|tsx)|/__test__/*.(js|jsx|ts|tsx)'],
   testMatch: [
     "<rootDir>/__test__/**/*.(test).{js,jsx,ts,tsx}",
     "<rootDir>/__test__/**/?(*.)(spec|test).{js,jsx,ts,tsx}"

@@ -44,9 +44,6 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     const isAuthenticated = localStorage.getItem("authToken") !== null;
-
-
-
     const redirects = [
         {
             evaluate: (to.matched.length === 0), // 404 not found
@@ -66,6 +63,10 @@ router.beforeEach((to, from, next) => {
         },
         {
             evaluate: (isAuthenticated && from.path === '/' && to.matched.some((record) => record.name === 'DetailsPage')), // First time, user is logged and arrive DetailsPage
+            action: () => next()
+        },
+        {
+            evaluate: (from.path.startsWith('/assets/') || from.path.startsWith('/img/')), // static files such as images
             action: () => next()
         },
         {
